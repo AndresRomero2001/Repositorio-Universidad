@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Detalles</title>
+    </head>
+    <body>
+            
+        <h1>Detalles del proyecto</h1>
+        <h2>Introducción</h2>
+
+        <p>Esta aplicación se encarga de la gestión online de un restaurante.
+            Es parecida a otras aplicaciones como Glovo, UberEats... pero se diferencia en que
+            LetsEat es una página personalizada para el restaurante, de forma que no depende 
+            de terceros, dando una mayor libertad a la hora de presentar y gestionar las
+            cosas
+            <br>
+            <br>
+            Esta aplicación se puede dividir en cuatro funcionalidades esenciales (1-4) y dos no tan importantes (5-6),
+            que se implementarán o no dependiendo de cómo vaya el equipo en tiempo.<br>
+            Estas estarán organizadas en páginas diferentes, a las cuales algunos
+            usuarios no tendrán permisos y otros sí.
+        </p>
+
+        <p><b>1- Reservar mesa</b></p> 
+        <p>
+            Con esta funcionalidad, los usuarios registrados 
+            podrán reservar una mesa para una fecha determinada (día y hora). Además podrán
+            ver en un apartado de su perfil las reservas que ya han hecho
+        </p>
+        <p>
+            El sistema de reservas será de la siguiente manera:<br>
+            El usuario eligirá la opción "reservar mesa" del menú de la web, lo cual le llevará a dicha pantalla, en la que 
+            le aparecerá un calendario para que elija el día deseado. Una vez seleccionado el día, le aparecerán las horas disponibles, si alguna de
+            estas le sirve, hará click en ella para seleccionarla y a continuación le dará al botón de aceptar, finalizando así la reserva.
+        </p>
+        
+        <p><b>2- Carta</b></p> 
+        <p>
+            En esta página todos los usuarios podrán ver la carta del restaurante.
+            El dueño podrá verla o modificarla, añadiendo, quitando o cambiando platos.
+            Los usuarios registrados y los no registrados simplemente podrán verla.
+        </p>
+        <p>
+            La forma de mostrar la carta será la siguiente:<br>
+            Habrá un submenú con las categorías deseadas por el dueño, como podría ser "Entrantes", "Carnes", "Postres"...
+            dentro de estas categorías, se mostrarán los platos en forma de cuadricula, destacando en grande la imagen de cada plato
+            para que el usuario se guíe por lo visual, aunque también aparecerá el nombre del plato. Si el usuario
+            quiere más información, podrá clickar en la imagen y le llevará a la página del producto, donde aparecerá
+            más información.
+        </p>
+        
+        <p><b>3- Hacer pedido</b></p> 
+        <p>
+            A la hora de hacer un pedido el usuario podrá elegir si lo quiere a domicilio 
+            o para recoger. Si lo pide a domicilio tendrá que rellenar un formulario con 
+            la información pertinente.
+            A continuación le aparecerá una página con dos columnas, en la de la izquierda
+            se mostrará una carta (una simplificación en lista de la del apartado "Carta") donde
+            podrá ver los platos del restaurante, organizados en las categorías que haya especificado el 
+            propietario en la página "Carta". Al lado de cada plato aparecerá un botón de añadir, para 
+            que el usuario seleccione los platos que quiere pedir. Una vez ha hecho click
+            en añadir, en la columna de la derecha, aparecerán los platos que ha ido 
+            seleccionando el usuario, donde al lado de cada plato aparecerá una "X" por 
+            si cambia de opinión y ya no quiere ese plato.
+        </p>
+
+        <p><b>4- Ver pedidos</b></p> 
+        <p>
+            En esta página el administrador podrá ver los pedidos que han hecho los clientes
+            para saber qué tienen que preparar, si es para domicilio o para recoger...
+        </p>
+        <p>
+            Como idea que igual se implementa o igual no, el propietario podría ir cambiando el estado del pedido
+            desde esta página, de forma que podría aceptar el pedido, indicar que ha empezado a cocinarse,
+            indicar que ya se ha acabado de cocinar (y si era take away, estaría listo para recogerse), o que
+            está en reparto, en caso de ser un pedido a domicilio.
+        </p>
+        <p>
+            En cuanto al diseño, atendiendo a la idea básica original, esta página reflejaría los pedidos en orden de más nuevos (arriba) 
+            a más antiguos (abajo), y se usará un acordeón, de forma que la ID del pedido ocuparía el título del desplegable, y en el contenido aparecería:
+            en la primera línea, la información de si es un pedido para recoger o a domicilio, y en las siguientes líneas los platos que ha pedido el usuario (1 plato por
+            línea para facilitar la visualización).
+        </p>
+
+        <p><b>5- Perfil</b></p>
+        <p>
+            El usuario registrado tendrá acceso a un perfil, al cual se accederá desde la pantalla de inicio tras haber hecho login.
+            En este perfil podrá haber varios apartados como: 
+            <br><blockquote>a) Sus datos por defecto de dirección para los pedidos a domicilio.</blockquote>
+                <blockquote>b) Sus reservas realizadas y las que ya ha hecho (a modo de información), con la posibilidad
+                    de cancelar o modificar las futuras reservas (es posible que no se implemente)</blockquote>
+
+        </p>
+
+        <p><b>6- Comentarios</b></p> 
+        <p>
+            Otra funcionalidad que igual se implementa o igual no, serían los comentarios.<br>
+            Los usuarios registrados que hayan hecho un pedido, podrán valorar los platos que han probado.
+            Estas valoraciones se visualizarán desde la carta normal del restaurante, tras haber clickado en
+            un producto determinado. Aparecerán en la parte inferior de la página del producto.
+        </p>
+        
+        <h2>Tipos de usuarios</h2>
+        <p><b>1- Usuario no registrado (invitado)</b></p>
+        <p>
+            Este usuario simplemente podrá mirar la carta normal del restaurante.
+        </p>
+
+        <p><b>2- Usuario registrado</b></p>
+        <p>
+            Este podrá realizar un pedido, ya sea a domicilio o para recoger y realizar una reserva
+            de mesa para comer en el restaurante, además de tener acceso a un perfil, donde podrá ver sus
+            futuras y pasadas reservas e información sobre la dirección por defecto para los pedidos
+            a domicilio
+        </p>
+
+        <p><b>3- Propietario del restaurante</b></p>
+        <p>
+            Este podrá hacer todo lo que el usuario registrado, pero además tendrá permisos para gestionar
+            la web, ya que es suya. Esto comprende cosas como modificar la carta del restaurante quitando, modificando
+            y añadiendo platos, cancelar reservas en caso de necesidad, cambiar el estado del pedido (en caso
+            de que se implemente esta funcionalidad)...
+        </p>
+    </body>
+</html>
