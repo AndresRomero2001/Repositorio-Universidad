@@ -1,0 +1,208 @@
+body{
+    background-color: rgb(247, 213, 173);
+    font-family: arial;
+}
+
+.cuerpoCarta{
+    width: 70%;
+    margin:auto;
+    padding-bottom: 5em;
+}
+
+button#abrirModalButton{
+    float:right;
+    margin-right: 10em;
+    margin-top: 3em;
+    width: 10em;
+    height: 3em;
+    background-color: #333;
+    color: white;
+    
+}
+
+#abrirModalButton:hover{
+    background-color: #222;
+    cursor: pointer;
+}
+
+#abrirModalButton:active{
+    background-color: black;
+}
+
+#tituloAnadirPlato{
+    margin-top: 4em;
+    font-size: 2em;
+}
+
+#anadirPlatoDiv{
+    clear:both;
+}
+
+#anadirPlatoForm{
+    margin-top: 1em;
+    clear:both;
+}
+
+.campoFormulario{
+    display: block;
+    margin-top: 1em;
+    font-size: 1.5em;
+}
+
+#fotoPlato{
+    background-color: white;
+
+}
+
+.mostrarCategoria{
+    font-size: 3em;
+    font-weight: bold;
+    display: inline-block
+}
+
+.formBorrarCat{
+    display: inline;
+}
+
+.borrarCatButton{
+    font-size:2.2em;
+    background-color: transparent;
+    border: 0;
+    border-radius: 0.3em;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+.borrarCatButton:hover{
+    background-color: rgba(255, 0, 0, 0.356);
+    cursor: pointer;
+}
+
+.borrarCatButton:active{
+    background-color: rgba(255, 0, 0, 0.499);
+}
+
+.mostrarCategoria:first-letter{
+    text-transform: uppercase;
+}
+
+.filaCategoria{
+    font-size: 1.5em;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* justify-content: flex-start; */  /* este es por defecto */
+}
+
+.imagenButton{
+    display: inline-block;
+    text-align: center;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+    margin-bottom: 1em;
+    width: 7em;
+}
+
+.verPlatoForm{
+    display: inline-block;
+}
+
+.mostrarNombre{
+    margin: 0;
+}
+
+.mostrarNombre:first-letter{
+    text-transform: uppercase !important;
+}
+
+.mostrarFoto{
+    height: 18em;
+    width: 14em;
+    object-fit: cover;
+    border-radius: 0.7em;
+}
+
+button.verPlato{
+    background-color: #333;
+    color: white;
+    border-radius: 0.2em;
+    border: 0;
+    margin: 0 auto;
+    height: 2em;
+}
+
+.verPlato:hover{
+    background-color: #222;
+    cursor: pointer;
+}
+
+.verPlato:active{
+    background-color: black;
+}
+
+.borrarPlatoForm{
+    display: inline-block;
+}
+
+button.borrarPlato{
+    display: inline;
+    background-color: transparent;
+    border: 0;
+    padding-top: 0;
+    height: 2em;
+}
+
+.borrarPlato:hover{
+    background-color: rgb(184, 58, 58);
+    border-radius: 0.2em;
+    cursor: pointer;
+}
+
+.borrarPlato:active{
+    background-color: brown;
+    border-radius: 0.2em;
+}
+
+/* --------- css para el modal ------------- */
+/* ---  css cogido de https://www.w3schools.com/howto/howto_css_modals.asp ----- */
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+  
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50em; /* Could be more or less, depending on screen size */
+}
+  
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+  
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+

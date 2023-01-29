@@ -1,0 +1,140 @@
+/* ---  css cogido de https://www.w3schools.com/howto/howto_css_modals.asp ----- */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+  
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50em; /* Could be more or less, depending on screen size */
+}
+  
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+  
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* para nivel contra */
+/* codigo propio */
+.divFormPerfil{
+margin-left: 25%;
+}
+
+#botonModal{
+    border-color: transparent;
+    background-color: #04AA6D;
+    border-radius: 2em;
+    font-size: 1.2em;
+    color:white;
+    margin-left: 8em;
+    position: absolute;
+     bottom: 20%;
+     cursor: pointer;
+     padding: 0.5em;
+}
+
+
+
+
+
+.divVerde{
+    background-color: green;
+}
+
+.divNaran{
+    background-color: rgb(237, 164, 69);
+}
+
+.divRojo{
+    background-color: rgb(197, 48, 40);
+}
+
+.divVerdeFinal{
+    background-color: rgb(46, 228, 61);
+}
+
+.divContra{
+    position: relative;
+    top: 0.1em;
+    width: 1em;
+    height: 1em;
+    margin-left: 0.1em;
+    margin-right: 0.1em;
+    /*     border-left-style: solid;
+    border-right-style: solid;
+    border-left-width: 3px;
+    border-right-width: 3px; 
+    border-color: white; */
+}
+
+.divContra:last-of-type{
+    margin-right: 1em;
+}
+
+.verContra{
+    float: right;
+ margin-right: 0.5em;
+  margin-top: -2em; 
+  position: relative;
+  font-size: 1.5em;
+  cursor: pointer;
+    border-color: transparent;
+    background-color: transparent;
+ 
+  z-index: 2;
+}
+
+
+
+/* fuente: https://www.w3schools.com/css/css_tooltip.asp */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+  }
+  
+  /* Tooltip text */
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 40em;
+    background-color: rgba(61, 61, 61, 0.778);
+    color: rgb(255, 255, 255);
+    /* text-align: center; */
+    padding: 0.5em;
+    border-radius: 6px;
+    
+   
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    bottom: 1.5em;
+    left: 0;
+
+    z-index: 1;
+  }
+  
+  /* Show the tooltip text when you mouse over the tooltip container */
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }

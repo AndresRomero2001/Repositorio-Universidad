@@ -1,0 +1,119 @@
+.mostrarFoto{
+    float: left;
+    height: 13em;
+    width: 11em;
+    object-fit: cover;
+    border-radius: 0.7em;
+    margin-left: 3em;
+}
+
+.cont{    
+    width: 100%;
+    display: block;
+}
+
+ #divCarrito{
+    background-color: bisque;
+    margin-top: 20px;
+    border: 5px solid black;
+    border-radius: 20px;
+	text-align: center;
+	float: right;
+    width: 40%;
+    /* left: 10%; */
+    height: 30em;
+     /* position: fixed;  */
+    overflow-y:auto;
+} 
+#divCarrito::-webkit-scrollbar {
+    width: 0.6em;               /* width of the entire scrollbar */
+  }
+  
+  #divCarrito::-webkit-scrollbar-track {
+    background: rgb(220, 220, 220);        /* color of the tracking area */
+    border-radius: 2em;
+  }
+  
+  #divCarrito::-webkit-scrollbar-thumb {
+    background-color: rgb(133, 133, 133);    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    /* border: 3px solid orange;  */ /* creates padding around scroll thumb */
+  }
+
+#divCarta{
+	text-align: center;
+	float: left;
+    width: 50%; 
+}
+
+.divPlato{
+    height: 14em;
+    width: 100%;
+    padding-top: 0;
+    margin-top: 0;
+    float: left;
+}
+
+.mostrarCategoriaPlato{
+    clear:both;
+    font-size: 3em;
+    text-align: center;
+}
+
+.mostrarCategoriaPlato:first-letter{
+    text-transform: uppercase;
+}
+
+.mostrarNombrePlato:first-letter{
+    text-transform: uppercase;
+}
+
+.mostrarDescripcionPlato{
+    padding-left: 15em;
+}
+
+.mostrarDescripcionPlato:first-letter{
+    text-transform: uppercase;
+}
+
+button#hacerPedidoButton{
+    width: 15em;
+    height: 3em;
+}
+
+.buttonPropio{
+    background-color: #313536;
+    color: white;
+}
+
+.buttonPropio:hover{
+    background-color: #111 !important;
+}
+
+.botonesPlatoCarrito{
+    background-color: transparent;
+    border-radius: 20em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    border-color: black;
+    cursor: pointer;
+    position: relative;
+    bottom: 0.2em; 
+
+    
+    float:right;
+    /* clear:right */
+}
+
+.precioPlatoCarr
+{
+    float:right;
+}
+
+.lineaPlatocarrito{
+    margin-left: 10em;
+    text-align: left;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+

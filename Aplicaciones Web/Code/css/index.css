@@ -1,0 +1,124 @@
+.imgPrincipal{
+    border-radius: 1em;
+    width: 100%;
+   height: 20em;
+    margin-left: 0.5em; 
+    margin-right: 0.5em; 
+    object-fit: cover; /* hace que las imagenes no se deformen, sino que se recortan (como si se vieran a traves de una ventana) */
+}
+
+
+.textOverImage {
+    border-radius: 0.5em;
+    font-size: 1.7em;
+    background-color: rgba(65, 65, 65, 0.853);
+    color: rgb(255, 255, 255);
+    padding: 0.2em;
+
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  
+}
+
+.textOverImage:hover {
+    background-color: rgb(65, 65, 65);
+    /* cursor: pointer; */ /* ya que al ser texto s epondria otro simbolo del cursor (al ser ahora un link ya no es necesario)*/
+}
+
+.contenedorImgPrin{
+    position: relative;
+    width: 30%;
+    margin-left: 1em;
+    margin-right: 1em;
+   
+}
+
+img:hover {
+box-shadow: 0 0 3px 2px;
+}
+
+.divContenedorImgPrin{
+    height: 20em;
+}
+  
+.specialButton{
+    width: 10em;
+    background-color: #313536d2;
+    color: rgb(255, 255, 255);
+    border-color: transparent;
+    /* margin-left: 1em;
+    margin-right: 1em; */
+    border-radius: 1em;
+    font-size: 1.75em;
+    padding-top: 3em;
+    padding-bottom: 3em;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+
+.specialButton:hover{
+    background-color: #313536;
+    cursor: pointer;
+}
+
+
+.specialLink{
+    text-decoration: none;  /* sino, sale un subrayado raro al lado de los elementos qu ehacen de link (por el espaciado del codigo del html) */
+}
+
+.specialLink:link{
+    color:black;
+}
+
+.specialLink:visited{
+    color:black;
+} 
+
+.specialForm{
+    display:inline-block;
+    /* width: 30%; */
+    margin-left: 1em;
+    margin-right: 1em;
+} 
+
+.botonInicio{
+    border-radius: 5em;
+    width: 15em;
+    height: 5em;
+    font-size: 1em;
+    background-color: #313536d2;
+    color: rgb(255, 255, 255);
+    border-color: transparent;
+    position: relative;
+    bottom: 3em;  
+}
+
+.botonInicioCarta{
+    border-radius: 5em;
+    width: 15em;
+    height: 5em;
+    font-size: 1em;
+    background-color: #313536d2;
+    color: rgb(255, 255, 255);
+    border-color: transparent;
+    bottom: 3em;  
+}
+
+.botonInicio:hover{
+    background-color: #313536;
+    cursor: pointer;
+}
+
+.botonInicioCarta:hover{
+    background-color: #313536;
+    cursor: pointer;
+}
+
+.aclamo{
+    display:inline-block;
+    font-size: 2.2em;
+    line-height: 1.1em;
+}

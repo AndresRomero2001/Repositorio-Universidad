@@ -1,0 +1,180 @@
+body, html {
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+    overflow-x:hidden;
+    font-family: arial;
+    background-color: rgb(247, 213, 173);
+} 
+
+  .errorMSG{
+    color: #D8000C;
+    float:right;
+  }
+  .errorMSG::before{
+    content: "⚠️";   
+  }
+
+  .formTitle{
+    font-size: 2em;
+  }
+  
+  .formInput{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  .formInput-XS{
+    width: 10%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    /* display: block; */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .formSubmitButton{
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .formSubmitButton:hover {
+    background-color: #45a049;
+  }
+  .centeredDiv{
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+  }
+
+  .centeredDivMedium{
+    margin: auto;
+    width: 70%;
+    padding: 10px;
+  }
+  .centeredDivBig{
+    margin: auto;
+    width: 80%;
+    padding: 10px;
+  }
+
+  .divCenterElements{
+    text-align:center;
+    position:relative;
+  }
+  
+  .centeredText{
+    text-align: center;
+  }
+
+  .verticalSpacerDiv-S{
+    height: 1em;
+    margin-bottom: 1em;
+  }
+  .verticalSpacerDiv-M{
+    height: 2em;
+    margin-bottom: 2em;
+  }
+
+  div.clear {
+    clear: both;
+  }
+
+  
+    
+.inlineBlockDiv{
+  display: inline-block;
+}
+
+.mediumDiv{
+  width: 40%; 
+}
+
+.LargeDiv{
+width: 60%; 
+}
+
+.leftMarginDiv-S{
+  display:inline-block;
+  margin-left: 2em;
+}
+
+.leftMarginDiv-M{
+  display:inline-block;
+  margin-left: 4em;
+}
+
+.leftMarginDiv-L{
+  display:inline-block;
+  margin-left: 8em;
+}
+
+/* Codigo cogido de https://www.w3schools.com/howto/howto_js_snackbar.asp y modificaciones hechas por un miembro del grupo*/
+
+/* The snackbar - position it at the bottom and in the middle of the screen */
+#errorToast {
+  visibility: hidden; /* Hidden by default. Visible on click */
+  min-width: 250px; /* Set a default minimum width */
+  margin-left: -125px; /* Divide value of min-width by 2 */
+  background-color: #333; /* Black background color */
+  color: #fff; /* White text color */
+  text-align: center; /* Centered text */
+  border-radius: 0.75em; /* Rounded borders */
+  padding: 1em; /* Padding */
+  padding-top: 0;
+  padding-bottom: 2em;
+  position: fixed; /* Sit on top of the screen */
+  z-index: 1; /* Add a z-index if needed */
+  left: 70%; /* Center the snackbar */
+  bottom: 40px; /* 30px from the bottom */
+  font-size: 1.2em;
+}
+
+/* Show the snackbar when clicking on a button (class added with JavaScript) */
+#errorToast.show {
+  visibility: visible; /* Show the snackbar */
+  /* Add animation: Take 0.5 seconds to fade in and out the snackbar.
+  However, delay the fade out process for 2.5 seconds */
+  -webkit-animation: fadein 0.5s/* , fadeout 0.5s 2.5s */;
+  animation: fadein 0.5s/* , fadeout 0.5s 2.5s; */
+}
+
+.toastTitle{
+  padding-top: 0;
+  padding-bottom: 0;
+  color: red;
+  font-size: 1.3em;
+}
+
+/* Animations to fade the snackbar in and out */
+@-webkit-keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
+
